@@ -315,7 +315,7 @@ app.layout = dbc.Container([
                     html.Ul([
                         html.Li([
                             html.A("Kaggle – Formula 1 World Championship (1950–2020)", 
-                                   href="https://www.kaggle.com/datasets", 
+                                   href="https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020", 
                                    target="_blank", 
                                    style={"textDecoration": "none", "color": "#dc3545", "fontWeight": "bold"})
                         ]),
