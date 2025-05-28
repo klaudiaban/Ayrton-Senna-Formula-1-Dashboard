@@ -291,10 +291,20 @@ app.layout = dbc.Container([
         ], width=6),
     ], className="mb-4"),
 
-    dbc.Alert([
+    dbc.Row([
+        dbc.Col([ dbc.Alert([
         html.I(className="bi bi-quote fs-3 me-2"),
         html.Span("Senna was the last F1 driver to die during a race before Jules Bianchi (2014).")
         ], color="secondary", className="fs-5", style={"fontFamily": "'Open Sans', sans-serif", "textAlign": "center"}),
+        ]),
+        dbc.Col([html.Video(
+            controls=True,
+            src="/assets/imola_crash.mp4", 
+            style={'width': '100%', 'borderRadius': '10px'}
+        ),])
+    ]),
+
+
     
     html.H2("Sources", className="text-danger my-4 text-center fw-bold display-4", style={"fontFamily": "'Open Sans', sans-serif"}),
 
@@ -342,6 +352,12 @@ app.layout = dbc.Container([
                         html.Li([
                             html.A("Wikipedia - Formula One Fatalities", 
                                    href="https://en.wikipedia.org/wiki/List_of_Formula_One_fatalities", 
+                                   target="_blank", 
+                                   style={"textDecoration": "none", "color": "#dc3545", "fontWeight": "bold"})
+                        ]),
+                        html.Li([
+                            html.A("Ayrton Senna's Fatal Crash Imola 1994", 
+                                   href="https://youtu.be/x9znf-lpg4Q?si=VSWEXF2d0vnt9mii", 
                                    target="_blank", 
                                    style={"textDecoration": "none", "color": "#dc3545", "fontWeight": "bold"})
                         ]),
