@@ -303,8 +303,6 @@ app.layout = dbc.Container([
             style={'width': '100%', 'borderRadius': '10px'}
         ),])
     ]),
-
-
     
     html.H2("Sources", className="text-danger my-4 text-center fw-bold display-4", style={"fontFamily": "'Open Sans', sans-serif"}),
 
